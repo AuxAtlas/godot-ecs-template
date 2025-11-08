@@ -170,10 +170,9 @@ macos.release.arm64 = "res://rust/target/release/lib%s.dylib"
 		project_name.to_snake_case(),
 		project_name.to_snake_case(),
 	]
-
 	_save_file(base_path.path_join("rust.gdextension"), gdextension_content)
 
-    var run_content = """use std::env;
+	var run_content = """use std::env;
 use std::process::{Command, Stdio};
 
 fn main() {

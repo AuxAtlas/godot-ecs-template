@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://dqhby7f587fe0"]
 
-[ext_resource type="Script" uid="uid://guo1kx7de5ss" path="res://addons/godot-bevy/wizard/project_wizard.gd" id="1"]
+[ext_resource type="Script" uid="uid://guo1kx7de5ss" path="res://addons/godot-ecs/wizard/project_wizard.gd" id="1"]
 
 [node name="ProjectWizard" type="ConfirmationDialog"]
-title = "Setup godot-bevy Project"
+title = "Setup godot-ecs Project"
 initial_position = 2
 ok_button_text = "Create Project"
 script = ExtResource("1")
@@ -11,7 +11,7 @@ script = ExtResource("1")
 [node name="VBox" type="VBoxContainer" parent="."]
 
 [node name="Label" type="Label" parent="VBox"]
-text = "Configure your godot-bevy project:"
+text = "Configure your godot-ecs project:"
 
 [node name="HSeparator" type="HSeparator" parent="VBox"]
 
@@ -30,7 +30,7 @@ placeholder_text = "Enter project name..."
 
 [node name="Label" type="Label" parent="VBox/Version"]
 custom_minimum_size = Vector2(120, 0)
-text = "godot-bevy Version:"
+text = "godot-ecs Version:"
 
 [node name="LineEdit" type="LineEdit" parent="VBox/Version"]
 size_flags_horizontal = 3
@@ -46,6 +46,6 @@ text = "Configure for release builds"
 
 [node name="PluginNote" type="RichTextLabel" parent="VBox"]
 bbcode_enabled = true
-text = "[b]Note:[/b] This wizard creates a project with [i]GodotDefaultPlugins[/i] which includes all standard godot-bevy functionality.\n\nAfter generation, you can customize plugin selection in your lib.rs file."
+text = "[b]Note:[/b] This wizard creates a project with [i]GodotDefaultPlugins[/i] which includes all standard godot-ecs functionality.\n\nAfter generation, you can customize plugin selection in your lib.rs file."
 fit_content = true
 scroll_active = false
